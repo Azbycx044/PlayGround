@@ -25,4 +25,4 @@ A small, self-contained idle RPG. Open `index.html` in a browser, or serve this 
 python3 -m http.server 3002
 ```
 
-Then visit [http://localhost:3002](http://localhost:3002). Choose an activity to collect resources and train skills; fulfill prophecies for rewards; buy upgrades from **Skills**. Your progress is saved in this browser, and elapsed time is applied on your next visit with no offline-time cap. Use **Pause** if you want your hero to stop progressing. **Start over** resets the local save.
+Then visit [http://localhost:3002](http://localhost:3002). Choose an activity to collect resources and train skills; fulfill prophecies for rewards; buy upgrades from **Skills**. Choose **Fight monsters** for automatic battles with enemy health, hero health, escalating monsters, loot, and combat XP. Use **Crafting** to turn resources into healing tonics, blades, and shields; crafted equipment auto-equips and tonics restore health. Your progress is saved in this browser, and elapsed time is applied on your next visit with no offline-time cap. Use **Pause** if you want your hero to stop progressing. **Start over** resets the local save.
