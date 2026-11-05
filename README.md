@@ -16,3 +16,13 @@
 - 👤 [Explore the creator's projects](https://go.ondev.store/Azbycx044).
 - 🌍 [Create with OMGithub](https://go.ondev.store/).
 <!-- omgithub:readme:end -->
+
+## Odd Gods
+
+A small, self-contained idle RPG. Open `index.html` in a browser, or serve this folder locally:
+
+```sh
+python3 -m http.server 3002
+```
+
+Then visit [http://localhost:3002](http://localhost:3002). Choose an activity to collect resources and train skills; fulfill prophecies for rewards; buy upgrades from **Skills**. Your progress is saved in this browser, and elapsed time is applied on your next visit with no offline-time cap. Use **Pause** if you want your hero to stop progressing. **Start over** resets the local save.
