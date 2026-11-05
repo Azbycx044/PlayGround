@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#17271f" />
+    <meta name="description" content="Explore a hand-crafted fantasy valley, master sword and spell, and help the people of Bloomvale." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Bloomvale — The Verdant Oath</title>
+    <script type="module" crossorigin src="/assets/index-DibfC7xJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D6bfvC08.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="ui-root">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Bloomvale home"><span class="brand-mark">✦</span><span>BLOOMVALE</span><i>THE VERDANT OATH</i></a>
+        <div class="top-meta"><span class="weather"><b>☀</b> CLEAR SKIES</span><span class="divider"></span><span id="clock">DAY 01&nbsp; · &nbsp;08:00</span><button class="icon-btn" id="sound-btn" title="Toggle sound" aria-label="Toggle sound">♫</button></div>
+      </header>
+
+      <section class="quest-card glass" id="quest-card">
+        <div class="eyebrow"><span class="quest-gem">✧</span> ACTIVE QUEST</div>
+        <h2 id="quest-title">A valley awakens</h2>
+        <p id="quest-copy">Find Elder Rowan in the village.</p>
+        <div class="quest-progress"><span id="quest-progress"></span></div>
+        <div class="quest-count" id="quest-count">FOLLOW THE GOLDEN MARKER</div>
+      </section>
+
+      <div class="right-rail">
+        <section class="map-card glass"><div class="map-heading"><span>WORLD MAP</span><span class="map-north">N ↑</span></div><canvas id="minimap" width="220" height="220" aria-label="World map"></canvas><div class="map-footer"><span><i class="dot you"></i> YOU</span><span><i class="dot quest-dot"></i> QUEST</span></div></section>
+        <button class="menu-chip glass" id="inventory-open"><span class="chip-icon">▤</span><span>INVENTORY</span><kbd>I</kbd></button>
+        <button class="menu-chip glass" id="journal-open"><span class="chip-icon">✧</span><span>JOURNAL</span><kbd>J</kbd></button>
+      </div>
+
+      <section class="player-hud glass">
+        <div class="player-avatar"><span>✦</span></div>
+        <div class="player-info"><div class="player-name"><span>WAYFARER</span><small>LEVEL <b id="level">01</b></small></div>
+          <div class="stat-line"><span class="stat-icon heart">♥</span><div class="bar"><i id="health-fill"></i></div><small id="health-label">100 / 100</small></div>
+          <div class="stat-line"><span class="stat-icon mana">✦</span><div class="bar"><i id="mana-fill"></i></div><small id="mana-label">60 / 60</small></div>
+          <div class="xp-row"><span>XP</span><div class="xp-bar"><i id="xp-fill"></i></div><span id="xp-label">0 / 100</span></div>
+        </div>
+      </section>
+
+      <div class="quickbar glass"><div class="quick-slot active"><kbd>1</kbd><span class="slot-art sword">⚔</span><small>IRONBLOOM</small></div><div class="quick-slot"><kbd>2</kbd><span class="slot-art spell">✧</span><small>STARFIRE</small><span class="slot-cost">12 MP</span></div><div class="quick-slot"><kbd>3</kbd><span class="slot-art potion">⚗</span><small>HEALING TEA</small><span class="slot-count" id="potion-count">2</span></div><div class="quick-slot keyboard-only"><kbd>4</kbd><span class="slot-art leaf">❋</span><small>GATHER</small></div></div>
+      <div class="controls-hint"><span>WASD</span> MOVE <i>·</i> <span>SHIFT</span> SPRINT <i>·</i> <span>SPACE</span> DODGE <i>·</i> <span>CLICK</span> ATTACK <i>·</i> <span>E</span> INTERACT</div>
+      <div id="interaction" class="interaction glass"><span class="keycap">E</span><span id="interaction-label">Speak with Elder Rowan</span></div>
+      <div id="toast" class="toast" role="status"></div>
+
+      <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"><section class="modal glass" id="modal" role="dialog" aria-modal="true"><button class="close-modal" id="modal-close" aria-label="Close">×</button><div class="modal-kicker">BLOOMVALE COMPENDIUM</div><h2 id="modal-title">Inventory</h2><div id="modal-content"></div></section></div>
+
+      <div class="intro-backdrop" id="intro"><section class="intro-panel glass"><div class="intro-sigil">✦</div><div class="intro-kicker">A WHIMSICAL OPEN-WORLD ADVENTURE</div><h1>The Verdant<br/><em>Oath</em></h1><p>Beyond the wildflower hills, an old magic stirs. Find your place in a world that remembers every kindness.</p><div class="intro-rule"><span></span>✧<span></span></div><button id="begin-btn" class="begin-btn">ENTER BLOOMVALE <span>→</span></button><div class="intro-foot">A NEW TALE IS WAITING FOR YOU</div></section><div class="intro-tip"><span>✦</span> YOUR STORY BEGINS IN THE MEADOW</div></div>
+
+      <div id="mobile-controls" class="mobile-controls" aria-label="Touch controls"><div class="touch-pad"><button data-move="forward">▲</button><div><button data-move="left">◀</button><button data-move="back">▼</button><button data-move="right">▶</button></div></div><div class="touch-actions"><button data-action="interact">E</button><button data-action="dodge">↗</button><button data-action="attack">⚔</button><button data-action="spell">✧</button></div></div>
+    </div>
+  </body>
+</html>
